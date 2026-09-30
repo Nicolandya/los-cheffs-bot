@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Mondello — pizzaria artesanal em São Paulo." />
+    <title>Mondello | Pizza artesanal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <header class="header" id="top">
+      <a class="brand" href="#top" aria-label="Mondello início"><span>M</span>ondello</a>
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="#cardapio">Cardápio</a><a href="#historia">A casa</a><a href="#experiencia">Experiência</a>
+      </nav>
+      <a class="reserve reserve--small" href="#reserva">Reservar mesa <i>↗</i></a>
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero__image" role="img" aria-label="Pizza artesanal saindo do forno"></div>
+        <div class="hero__shade"></div>
+        <div class="hero__content">
+          <p class="eyebrow light reveal">Desde 1987 · São Paulo</p>
+          <h1 class="reveal">Feita no tempo<br />que importa.</h1>
+          <p class="hero__copy reveal">Massa de longa fermentação, ingredientes que respeitam a origem e o fogo que faz tudo acontecer.</p>
+          <a class="reserve reveal" href="#reserva">Reserve sua mesa <i>↗</i></a>
+        </div>
+        <div class="hero__bottom"><span>Role para descobrir</span><span class="scroll-line"></span><span>01 / 04</span></div>
+      </section>
+
+      <section class="intro section-pad" id="historia">
+        <p class="eyebrow reveal">O nosso jeito</p>
+        <div class="intro__grid">
+          <h2 class="reveal">Pizza é encontro.<br /><em>É memória à mesa.</em></h2>
+          <div class="intro__text reveal"><p>Na Mondello, cada pizza começa 48 horas antes de chegar à sua mesa. Acreditamos no gesto lento, na matéria-prima honesta e no prazer de dividir uma boa refeição.</p><a class="text-link" href="#experiencia">Conheça a nossa história <span>→</span></a></div>
+        </div>
+        <div class="facts reveal"><div><b>48h</b><span>de fermentação</span></div><div><b>450°</b><span>forno a lenha</span></div><div><b>100%</b><span>ingredientes frescos</span></div></div>
+      </section>
+
+      <section class="menu section-pad" id="cardapio">
+        <div class="section-heading"><div><p class="eyebrow reveal">Do forno</p><h2 class="reveal">Favoritas da casa</h2></div><a class="text-link reveal" href="#reserva">Ver cardápio completo <span>→</span></a></div>
+        <div class="pizza-grid">
+          <article class="pizza-card reveal"><div class="pizza-photo pizza-photo--one"><span class="tag">Mais pedida</span></div><div class="pizza-card__info"><div><h3>La Mondello</h3><p>Pomodoro, fior di latte, manjericão e azeite da casa.</p></div><b>R$ 76</b></div></article>
+          <article class="pizza-card reveal"><div class="pizza-photo pizza-photo--two"></div><div class="pizza-card__info"><div><h3>Calabresa & mel</h3><p>Calabresa artesanal, cebola roxa, mel picante e pecorino.</p></div><b>R$ 82</b></div></article>
+          <article class="pizza-card reveal"><div class="pizza-photo pizza-photo--three"></div><div class="pizza-card__info"><div><h3>Cogumelos</h3><p>Portobello, shimeji, mozzarella de búfala e ervas.</p></div><b>R$ 84</b></div></article>
+        </div>
+      </section>
+
+      <section class="experience" id="experiencia">
+        <div class="experience__image"></div>
+        <div class="experience__copy"><p class="eyebrow light reveal">À noite, ainda melhor</p><h2 class="reveal">Uma mesa<br />para <em>ficar.</em></h2><p class="reveal">Vinhos escolhidos a dedo, luz baixa e um salão que convida a desacelerar. Chegue com fome. Fique pela conversa.</p><a class="reserve reveal" href="#reserva">Viver a experiência <i>↗</i></a></div>
+      </section>
+
+      <section class="booking section-pad" id="reserva">
+        <div><p class="eyebrow reveal">Sua mesa espera</p><h2 class="reveal">Vamos nos encontrar?</h2><p class="booking__text reveal">Para reservas de até 8 pessoas, escolha abaixo o melhor dia e horário. Para grupos, fale com a gente.</p></div>
+        <form class="booking-form reveal" id="booking-form">
+          <label>Nome<input required name="name" placeholder="Como podemos te chamar?" /></label>
+          <div class="form-row"><label>Data<input required name="date" type="date" /></label><label>Pessoas<select name="guests"><option>2 pessoas</option><option>3 pessoas</option><option>4 pessoas</option><option>5 pessoas</option><option>6 pessoas</option><option>7 pessoas</option><option>8 pessoas</option></select></label></div>
+          <label>Horário<select name="time"><option>19:00</option><option>20:00</option><option>21:00</option><option>22:00</option></select></label>
+          <button class="reserve" type="submit">Solicitar reserva <i>↗</i></button><p class="form-message" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+    <footer><a class="brand" href="#top"><span>M</span>ondello</a><div><p>Rua dos Pinheiros, 842 · Pinheiros</p><p>Terça a domingo, das 18h à 00h</p></div><div class="social"><a href="#top">Instagram</a><a href="#top">WhatsApp</a></div><small>© 2024 Mondello Pizzaria</small></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
